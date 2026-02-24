@@ -1,0 +1,31 @@
+### GET
+
+GET http://localhost:8080/V1/api/relogios/getAllPaginated
+Content-Type: application/json
+
+### POST
+POST http://localhost:8080/V1/api/relogios/create
+Content-Type: application/json
+
+{
+  "marca": "Seiko",
+  "modelo": "Prospex Diver",
+  "referencia": "SPB143J1",
+
+  "tipoMovimento": "automatic",
+  "materialCaixa": "steel",
+  "tipoVidro": "safira",
+
+  "resistenciaAguaM": 200,
+  "diametroMm": 40,
+  "lugtoLugMm": 47,
+  "espessuraMm": 13,
+  "larguraMm": 20,
+  "precoEmCentavos": 459900,
+  "urlImagem": "https://exemplo.com/imagens/seiko-prospex.jpg"
+}
+
+### GET DETAILS
+
+GET http://localhost:8080/V1/api/relogios/details?id=0123
+Content-Type: application/json
